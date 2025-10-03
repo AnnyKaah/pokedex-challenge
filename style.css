@@ -777,7 +777,7 @@ header h1 {
 
     .pokemon-card {
         width: calc(50% - 15px); /* Garante 2 cards por linha */
-        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        height: 250px; /* Altura fixa para evitar que os cards se sobreponham */
     }
 
     .pokemon-detail-card .pokemon-name {
