@@ -1,8 +1,12 @@
+<div align="center">
+    
 #  Pokédex - Desafio DIO 🚀
 
-![Pokédex Showcase](https://SEU-LINK-PARA-IMAGEM-DE-CAPA.png)
+![Pokédex Showcase](images/pokedex.gif)
 
 > **Desafio do Bootcamp Ri Happy - Front-end do Zero #2 da [Digital Innovation One (DIO)](https://www.dio.me/).**
+
+</div>
 
 ## 📖 Sobre o Projeto
 
@@ -16,9 +20,9 @@ A aplicação se destaca por sua interface gamificada, animações fluidas e fer
 
 ## 🎬 Demonstração
 
-| Animação de Abertura | Visualização Principal | Detalhes do Pokémon |
-| :---: | :---: | :---: |
-| ![Hero Page Animation](images/pokedex.gif) | ![Pokedex Main View](images/mainpage.png) | ![Pokemon Detail Modal](images/carddetail.png) |
+| Visualização Principal | Detalhes do Pokémon |
+| :---: | :---: |
+|![Pokedex Main View](images/mainpage.png) | ![Pokemon Detail Modal](images/carddetail.png) |
 
 ---
 
