@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Page / Tela de Boas-Vindas -->
+    <div id="hero-container" class="hero-container">
+        <div class="pokeball-animation">
+            <div class="pokeball-top"></div>
+            <div class="pokeball-bottom"></div>
+            <div class="pokeball-center-button"></div>
+        </div>
+        <div class="hero-instructions">
+            <h2>Welcome to the Pokédex!</h2>
+            <p>Explore the world of Pokémon. Click on the cards to see details and use the search to find your favorite.</p>
+            <button id="enter-btn">Enter</button>
+        </div>
+    </div>
+
+    <header>
+        <!-- Detalhes decorativos do cabeçalho -->
+        <div class="header-decoration">
+            <div class="light-big"></div>
+            <div class="lights-small-container">
+                <div class="light-small red"></div>
+                <div class="light-small yellow"></div>
+                <div class="light-small green"></div>
+            </div>
+        </div>
+        <h1>Pokédex</h1>
+        <label for="search-input" class="visually-hidden">Search Pokémon by name</label>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search Pokémon by name...">
+        </div>
+        <!-- Novos Controles de Filtro e Ordenação -->
+        <div class="filters-container">
+            <select id="type-filter">
+                <option value="all">All Types</option>
+                <!-- Opções de tipo serão adicionadas via JS -->
+            </select>
+            <select id="color-filter">
+                <option value="all">All Colors</option>
+                <!-- Color options will be added via JS -->
+            </select>
+            <div class="sort-control">
+                <select id="sort-by">
+                    <option value="id">Sort by ID</option>
+                    <option value="name">Name</option>
+                    <option value="height">Height</option>
+                    <option value="weight">Weight</option>
+                </select>
+                <button id="sort-order-btn" title="Reverse Order">↑↓</button>
+            </div>
+        </div>
+    </header>
+    <main id="pokedex-container" class="pokedex-container">
+        <div id="loader" class="loader"></div>
+    </main>
+
+    <!-- Container para o botão "Carregar Mais" -->
+    <div id="load-more-container" class="load-more-container">
+        <button id="load-more-btn" style="display: none;">Carregar Mais</button>
+    </div>
+
+    <!-- Modal para exibir os detalhes do Pokémon -->
+    <div id="modal-container" class="modal-container hidden">
+        <!-- Detailed content will be injected here by JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
